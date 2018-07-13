@@ -4,7 +4,7 @@
   "description": "simplest redux + react example",
   "main": "index.js",
   "scripts": {
-    "start": "browserify --debug --extension=js -o bundle.js index.js && http-server -p 8000"
+    "start": "browserify --debug --extension=js -o bundle.js index.jsx && http-server -p 8000"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,15 @@
   },
   "browserify": {
     "transform": [
-      [ "babelify", { "presets": ["es2015", "react"] } ]
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
     ]
   },
   "homepage": "https://github.com/jackielii/simplest-redux-example#readme",

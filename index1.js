@@ -5,7 +5,7 @@ import { createStore } from 'redux'
 import { Provider, connect } from 'react-redux'
 
 // React component
-class Counter extends Component {
+class AppComponent extends Component {
   render() {
     const { value, onIncreaseClick } = this.props
     return (
@@ -17,7 +17,7 @@ class Counter extends Component {
   }
 }
 
-Counter.propTypes = {
+AppComponent.propTypes = {
   value: PropTypes.number.isRequired,
   onIncreaseClick: PropTypes.func.isRequired
 }
@@ -57,7 +57,7 @@ function mapDispatchToProps(dispatch) {
 const App = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Counter)
+)(AppComponent)
 
 ReactDOM.render(
   <Provider store={store}>
