@@ -32,8 +32,9 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
+//connect()方法中第一个参数必须占位，不然mapDispatchToProps会前移充当第一个参数
 const Button = connect(
-    //mapStateToProps,
+    null,
     mapDispatchToProps
 )(ButtonComponent);
 

@@ -42,9 +42,10 @@ function mapStateToProps(state) {
     }
 }*/
 
+//connect()方法中两个参数必须都得传进去
 const Shower = connect(
     mapStateToProps,
-    //mapDispatchToProps
+    null
 )(ShowerComponent);
 
 export default Shower;

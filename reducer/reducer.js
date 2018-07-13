@@ -22,4 +22,5 @@ function counter(state = initialState, action) {
 // Store
 const store = createStore(counter);
 
-export default {store,increaseAction};
+//export defult 删除default，default默认只会导出一个对象
+export {store,increaseAction};
